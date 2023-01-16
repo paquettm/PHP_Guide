@@ -10,13 +10,13 @@ PHP is a general purpose language and can be used for other purposes, but it is 
 
 ## Software requirements
 
-A simple way to run PHP code and see the result in a Web browser is to use an ~ AMP stack ~.
+A simple way to run PHP code and see the result in a Web browser is to use an *AMP stack*.
 An AMP stack is a software bundle that includes
 - Apache: a Web Server application, alternatively, NGINX can be used as a Web Server application
 - MySQL: a relational database management system, to maintain databases
 - PHP: the PHP interpreter module
 
-These ~AMP stacks~ are often called ~ LAMP stack ~ when they run on Linux and ~ WAMP stacks ~ on Windows.
-XAMPP is such an AMP stack that is available for Linux, Windows, and Mac OS.
+These ~AMP stacks~ are often called *LAMP* stack when they run on Linux and *WAMP* stacks on Windows.
+*XAMPP* is such an AMP stack that is available for Linux, Windows, and Mac OS.
 XAMPP contains the software listed above and more, and is available from [apachefriends.org](https://www.apachefriends.org/).
 
