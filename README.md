@@ -16,7 +16,7 @@ An AMP stack is a software bundle that includes
 - MySQL: a relational database management system, to maintain databases
 - PHP: the PHP interpreter module
 
-These ~AMP stacks~ are often called *LAMP* stack when they run on Linux and *WAMP* stacks on Windows.
+These AMP stacks are often called *LAMP* stacks when they run on Linux and *WAMP* stacks on Windows.
 *XAMPP* is such an AMP stack that is available for Linux, Windows, and Mac OS.
 XAMPP contains the software listed above and more, and is available from [apachefriends.org](https://www.apachefriends.org/).
 
