@@ -1,4 +1,4 @@
-# PHP_Course: Learning enough PHP to write Web Applications
+# PHP_Guide: Learning enough PHP to write Web Applications
 
 This repository contains course material developed for the reader to learn enough PHP to write Web applications.
 
