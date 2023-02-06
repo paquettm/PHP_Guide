@@ -1,24 +1,21 @@
 # Numbers
 
-One thing to notice about PHP is that it provides automatic data type 
-conversion.
-
+PHP variables ar loosely typed:
 If you assign an integer value to a variable, the type of that variable will be integer. 
 Then, if you assign a string to the same variable, the type will change to string.
 
-This automatic conversion can sometimes break your code.
-
 ## Integers
 
-2, 256, -256, 10358, -179567 are examples of integers.
+Examples of integers include 2, 256, -256, 10358, and -179567.
 
-An integer is a number without any decimal part.
+An integer is a number **without a decimal point and digits following a decimal point**. 
 
 An integer type value is a number, without digits after the decimal point, between -2147483648 and 2147483647 in 32 bit systems, and between -9223372036854775808 and 9223372036854775807 in 64 bit systems.
-Any value outside these specified intervals, will be stored as float.
-Any value inside these intervals but specified with a decimal point, even if the digits are zero (0), will be stored as a float.
+Any value outside these specified intervals, will be stored as a floating-point number (float) because of restrictions on the integer values we can precisely store within 32 and 64 bits respectively.
+Any value inside these intervals but specified with a decimal point, even if the digits are zero (0), will be stored as a float (floating-point number).
 
 Note that even if the result of an expression is a whole number, if the expression contains a floating-point number, the result is a float, e.g.,  4 * 2.5 is 10.0, a float, because the float 2.5 is part of the expression.
+This is because mathematical operations with a float will result in a float, in order to store precise results.
 
 Here are some rules for integers:
 * An integer must have at least one digit (0 counts as a digit)
@@ -37,8 +34,7 @@ integer:
 * is_integer() - alias of is_int()
 * is_long() - alias of is_int()
 
-Check if the type of a variable is integer:
-
+In th following example, we check if the type of a variable is integer:
 ```
 <?php
 $x = 5985;
@@ -50,9 +46,11 @@ var_dump(is_int($x));
 
 ## Floats
 
-A float is a number with a decimal point or a number in exponential form.
+A float (floating-point number) is a number with a decimal point or a number in exponential form. The way these numbers are stored with binary digits (0s and 1s) differs from the storage of integers:
+* generally speaking, integers are decimal numbers converted to binary with a maximum of 31 or 63 binary digits and another bit used to store the sign
+* floats are stored in 3 parts: a sign, a mantissa, and an exponent on base 2. The mantissa has a limited length and represents all but one significant bits of a floating-point number represented in binary exponential format. For this reason, floating-point values are not 100% accurate to represent all numbers.
 
-2.0, 256.4, 10.358, 7.64E+5, 5.56E-5 are all examples of floats.
+Examples of floats include 2.0, 256.4, 10.358, 7.64E+5, 5.56E-5.
 
 The float data type can commonly store a value up to 1.7976931348623E+308 
 (platform dependent), and have a maximum precision of 14 digits.
