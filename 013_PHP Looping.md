@@ -183,3 +183,68 @@ foreach($ages as $key => $value){
 }
 ?>
 ```
+
+## break directive
+
+You have already seen the break statement used with switch statements, to "jump out" of a switch block after the code for a case is run. The break statement can also be used to jump out of a loop.
+
+This example jumps out of the loop when x is equal to 4:
+```
+<?php
+for ($x = 0; $x < 10; $x++) {
+  if ($x == 4) {
+    break;
+  }
+  echo "The number is: $x <br>";
+}
+?>
+```
+
+Equivalently with a while loop:
+
+```
+<?php
+$x = 0;
+while($x < 10) {
+  if ($x == 4) {
+    break;
+  }
+  echo "The number is: $x <br>";
+  $x++;
+}
+?>
+```
+
+## continue directive
+
+The continue statement stops the loop body from running for one iteration and continues at the next iteration of the loop.
+
+This example skips the value of 4:
+
+```
+<?php
+for ($x = 0; $x < 10; $x++) {
+  if ($x == 4) {
+    continue;
+  }
+  echo "The number is: $x <br>";
+}
+?>
+```
+
+Equivalently with a while loop:
+
+```
+<?php
+$x = 0;
+while($x < 10) {
+  if ($x == 4) {
+    $x++;
+    continue;
+  }
+  echo "The number is: $x <br>";
+  $x++;
+  }
+?>
+```
+Notice here that, in order to avoid infinite looping when $x==4, an increment instruction is added before the `continue` directive. The exercise is left to you to understand the reason behind this. 
