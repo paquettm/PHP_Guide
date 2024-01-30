@@ -1,3 +1,21 @@
+# Client-Server Model
+
+The client-server model is a distributed application structure where tasks or workloads are divided between service providers, called servers, and service requesters, called clients. It's a fundamental architecture in computer networking that facilitates communication and resource sharing between multiple devices over a network. Here's a breakdown of its key components:
+
+1. **Client**: A client is a device or program that initiates a request for services or resources from a server. It could be a computer, smartphone, or any other device capable of making requests over a network. Clients typically run applications that interact with servers to perform specific tasks or access resources.
+
+2. **Server**: A server is a powerful computer or software application that provides services or resources to clients upon request. Servers are designed to handle multiple client requests simultaneously, managing resources and distributing them as needed. Examples of servers include web servers, file servers, email servers, and database servers.
+
+3. **Request-Response Model**: Communication between clients and servers in the client-server model follows a request-response paradigm. Clients send requests for specific services or resources to servers, and servers respond to these requests by providing the requested services or resources. This interaction forms the basis of most client-server applications.
+
+4. **Client-Side Logic**: Clients often contain user interfaces and client-side logic responsible for initiating requests, processing server responses, and presenting results to users. Client-side logic can range from simple web browsers displaying web pages to complex applications handling various types of data and interactions.
+
+5. **Server-Side Logic**: Servers execute the requested tasks or provide the requested resources by processing client requests. Server-side logic includes handling client requests, accessing data or resources, performing necessary computations, and generating responses to send back to clients. Servers typically run specialized software tailored to the specific services they provide.
+
+6. **Statelessness**: In many client-server interactions, servers are designed to be stateless, meaning they don't retain information about past requests from clients. Instead, each client request is treated independently, and the server processes it based solely on the information provided in the request. This design simplifies scalability and fault tolerance but may require additional mechanisms for managing session state if needed.
+
+Overall, the client-server model forms the basis for a wide range of networked applications and services, enabling efficient communication and resource sharing across diverse computing environments.
+
 # HTTP Resquests
 
 Browsers and other web clients communicate with servers via HTTP requests. These requests serve as the primary mechanism for clients to request resources and trigger actions on remote servers, enabling the dynamic functionality and interactivity of the web.
