@@ -1,5 +1,6 @@
 # Client-Server Model
 
+```
 +--------+        +--------+
 | Client |        | Server |
 +--------+        +--------+
@@ -10,7 +11,7 @@
      |   200 OK         |
      |<-----------------|
      |                  |
-
+```
 
 The client-server model is a distributed application structure where tasks or workloads are divided between service providers, called servers, and service requesters, called clients. It's a fundamental architecture in computer networking that facilitates communication and resource sharing between multiple devices over a network. Here's a breakdown of its key components:
 
