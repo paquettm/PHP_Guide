@@ -360,3 +360,24 @@ echo json_encode($response);
 
 This code listens for requests on the PHP built-in web server and responds with JSON data containing the HTTP method, headers, and body received in the request. Depending on the HTTP method, you can perform specific actions or processing on the received data. In this example, each method simply returns the received data without any additional processing.
 
+```
+Fill out this form
+<form method='POST' action=''>
+	<label>Your Name:<input type='text' name='user_name' /></label>
+	<input type="submit" name="action" value='submit your name' />
+</form>
+<?php
+//$_GET
+//$_SERVER
+
+$headers = getallheaders();
+echo json_encode($headers);
+
+if(isset($_POST['user_name'])){
+	$name = $_POST['user_name'];
+    echo "Hello $name";
+}else{
+	echo "Fill out the form and I will greet you";
+}
+?>
+```
