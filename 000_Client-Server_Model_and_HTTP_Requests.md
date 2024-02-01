@@ -29,7 +29,7 @@ The client-server model is a distributed application structure where tasks or wo
 
 Overall, the client-server model forms the basis for a wide range of networked applications and services, enabling efficient communication and resource sharing across diverse computing environments.
 
-# HTTP Resquests
+# HTTP Requests
 
 Browsers and other web clients communicate with servers via HTTP requests. These requests serve as the primary mechanism for clients to request resources and trigger actions on remote servers, enabling the dynamic functionality and interactivity of the web.
 
