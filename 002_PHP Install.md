@@ -9,9 +9,34 @@ To start using PHP, you can:
 
 ## Setting up an AMP Stack
 
+### XAMPP
+
 The easiest solution to getting up and running quickly with PHP is to install an *AMP stack*, which is a collection of a Web server, a database management system, and the PHP script interpreter. We recommend installing XAMPP which is available from [ApacheFriends.org](https://www.apachefriends.org/).
 
 All you have to do is install the most recent version for the operating system on your PC. There are XAMPP distributions for Linux, Windows and MacOS.
+
+### Docker 
+GitHub user [tomsik68](https://github.com/tomsik68) has set up a [Dockerfile producing a docker image to contain XAMPP](https://github.com/tomsik68/docker-xampp). The image can be deployed without compilation with the simple commands (for Windows)
+```
+docker run --name myXampp -p 22:22 -p 80:80 -d -v C:/path/to/local/web/root:/opt/lampp/htdocs tomsik68/xampp
+```
+where `C:/path/to/local/web/root` is the location on your computer where you are placing your Web application code. This location will be mounted to the container and accessed by its contained servers.
+You can simply create/edit your Web application locally directly in your `C:/path/to/local/web/root` folder.
+
+**(Not completely tested)** You may save the docker image on USB for "ease of transportation" and to avoid having to download again using.
+
+Commit any changes you need to keep.
+```
+docker commit myXampp tomsik68/xampp 
+```
+Save the image to an archive on your USB device.
+```
+docker save tomsik68/xampp -o d:/myXampp.tar 
+```
+Load the image to use again with the above docker run command.
+```
+docker load -i d:\myXampp.tar
+```
 
 ## Set Up PHP on Your Own PC
 
